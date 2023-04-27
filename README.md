@@ -22,22 +22,32 @@ A CLI python program that uses the OpenAI API to respond to user's request for a
     pip install -r requirements.txt
     ```
 
-3. Create a .env file in the root directory and add the following:
+3. Rename the `.env.example` file to `.env` and add your OpenAI API key
 
     ```bash
-    OPENAI_API_KEY=your_key_here
+    OPENAI_API_KEY=your_api_key_here
     ```
 
-4. Add to bash etc
+4. (Optional) Add to bash etc.
+
+    Modify .bash_profile (or .bashrc, .zshrc, etc.) to include the following function:
 
     ```bash
-    alias hack="python '/path/to/hacker.py'"
+    function hacker() {
+        python '/path/to/hacker.py'
+    }
+    ```
+
+    Or create an alias:
+
+    ```bash
+    alias hacker="python '/path/to/hacker.py'"
     ```
 
 5. Run the program
 
     ```bash
-    hack your_request_here>
+    hacker your_request_here>
     ```
 
 ## License
