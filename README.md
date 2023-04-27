@@ -1,12 +1,12 @@
-# openai test
+# hacker-ai
 
-A python bot that uses the OpenAI API to generate text.
+A CLI python program that uses the OpenAI API to respond to user's request for assistance like a hacker from an 80s movie.
 
 ## Requirements
 
-    - Python 3.8 or higher
-    - Python packages: openai, python-dotenv
-    - [OpenAI API Key](https://beta.openai.com/)
+- Python 3.8 or higher
+- Python packages: openai, python-dotenv
+- [OpenAI API Key](https://beta.openai.com/)
 
 ## Installation
 
@@ -28,16 +28,18 @@ A python bot that uses the OpenAI API to generate text.
     OPENAI_API_KEY=your_key_here
     ```
 
-4. Run the bot
+4. Add to bash etc
 
     ```bash
-    python bot.py
+    alias hack="python '/path/to/hacker.py'"
     ```
 
-## Usage
+5. Run the program
 
-    - test
+    ```bash
+    hack your_request_here>
+    ```
 
 ## License
 
-    [MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)
