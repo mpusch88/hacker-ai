@@ -34,7 +34,7 @@ A CLI python program that uses the OpenAI API to respond to user's request for a
 
     ```bash
     function hacker() {
-        python '/path/to/hacker.py'
+        python '/path/to/hacker.py' "$@"
     }
     ```
 
@@ -47,8 +47,16 @@ A CLI python program that uses the OpenAI API to respond to user's request for a
 5. Run the program
 
     ```bash
-    hacker your_request_here>
+    hacker <your_request_here>
     ```
+
+    Or, if you did't add the function/alias to your bash profile:
+
+    ```bash
+    python /path/to/hacker.py <your_request_here>
+    ```
+
+    After a receiving a response, you can enter a new request or type `exit`, `quit`, or `q` to quit.
 
 ## License
 
